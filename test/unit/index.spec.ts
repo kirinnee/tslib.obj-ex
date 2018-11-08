@@ -27,30 +27,6 @@ describe("index", () => {
 		});
 	});
 	
-	describe("AsObject", () => {
-		it("should convert dot-notation to object", () => {
-			let testSubj: Map<string, number[]> = new Map([
-				["a.b", [2, 3]],
-				["a.c", [3, 4]],
-				["a.d.one", [1, 2, 3]],
-				["a.d.two", [3, 4, 5]],
-				["b", [-1, -2]]
-			]);
-			let expected: object = {
-				a: {
-					b: [2, 3],
-					c: [3, 4],
-					d: {
-						one: [1, 2, 3],
-						two: [3, 4, 5]
-					}
-				},
-				b: [-1, -2]
-			};
-			testSubj.AsObject().should.deep.equal(expected);
-		});
-	});
-	
 	describe("AsMap", () => {
 		it("should convert to map using dot notation", () => {
 			let expected: Map<string, number[]> = new Map([

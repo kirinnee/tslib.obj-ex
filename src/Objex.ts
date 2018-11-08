@@ -39,17 +39,9 @@ class ObjectX implements Objex {
 	public ExtendPrimitives(): void {
 		let c = this;
 		let C = this.c;
-		Map.prototype.AsObject = function (): object {
-			let ret: object = {};
-			this.Each((k: string, v: any) => {
-				let dot: string[] = k.split('.');
-				c.SV(ret, dot, v);
-			});
-			return ret;
-		};
-		
+
 		Object.prototype.AsMap = function <X>(): Map<string, X> {
-			return c.FO(this);
+			return C.FlattenObject(this);
 		};
 		
 		Object.prototype.Clone = function (): object {
@@ -120,17 +112,6 @@ class ObjectX implements Objex {
 		
 	}
 	
-	private SV(obj: any, dot: string[], value: any) {
-		if (dot.length === 1) {
-			obj[dot[0]] = value;
-		} else {
-			if (typeof obj[dot[0]] === "undefined") {
-				obj[dot[0]] = {};
-			}
-			this.SV(obj[dot[0]], dot.Skip(1), value);
-		}
-	}
-	
 	/**
 	 * Type Of, shortforms typeof
 	 * @param obj
@@ -146,27 +127,6 @@ class ObjectX implements Objex {
 	 */
 	private NO(data: any): boolean {
 		return this.c.IsArray(data) || data instanceof RegExp || data instanceof Date || !this.TO(data, "object") || this.TO(data, "function");
-	}
-	
-	/**
-	 * Flatten object
-	 * @param obj
-	 * @param prepend
-	 * @constructor
-	 */
-	private FO(obj: any, prepend: string = ''): Map<string, any> {
-		let ret: Map<string, string> = new Map<string, string>();
-		for (let k in obj) {
-			if (obj.hasOwnProperty(k)) {
-				let data: any = obj[k];
-				if (this.NO(data)) {
-					ret.set(prepend + k, data);
-				} else {
-					ret = new Map(ret.Arr().Union(this.FO(data, prepend + k + ".").Arr(), true));
-				}
-			}
-		}
-		return ret;
 	}
 	
 	private OR(from: any, to: any): object {

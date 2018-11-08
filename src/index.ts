@@ -1,13 +1,6 @@
 import {ObjectX, Objex} from "./Objex";
 
 declare global {
-	interface Map<K, V> {
-		/**
-		 * Returns the map to object using dot notation
-		 * @constructor
-		 */
-		AsObject(): object;
-	}
 	
 	interface Object {
 		
