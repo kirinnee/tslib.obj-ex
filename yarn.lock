@@ -90,12 +90,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@kirinnee/core@^0.6.7":
-  version "0.6.7"
-  resolved "https://registry.yarnpkg.com/@kirinnee/core/-/core-0.6.7.tgz#47c5f8651f71ae16a5dacf1cb8cfb5befdfb4af1"
-  integrity sha512-dIxClePhsv9FXY7vEF2Z0iEDeQeA/JKxRaaRs82m1w6B8IgAOrDpXgiAUMY32wQMWMpx55JY/qeEFg0eYBhJ8w==
-  dependencies:
-    ts-declaration-webpack-plugin "^1.1.1"
+"@kirinnee/core@^0.6.9":
+  version "0.6.9"
+  resolved "https://registry.yarnpkg.com/@kirinnee/core/-/core-0.6.9.tgz#889b95c6470e1b753e53eef5346356a60c907847"
+  integrity sha512-hBhxTXpxLSo4EJuEAZnYei4ATdq6j5U3h0l+vIzu0QdEKhYGHO+IczNJtCNIzunF1HuJx10GCNEKWNnM7SVFwg==
 
 "@types/chai@^4.1.6":
   version "4.1.7"
@@ -1085,14 +1083,6 @@ domain-browser@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
   integrity sha512-jnjyiM6eRyZl2H+W8Q/zLMA481hzi0eszAaBUzIVnmYVDBbnLxVNnfu1HgEBvCbL+71FrxMl3E6lpKH7Ge3OXA==
-
-dts-bundle-generator@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/dts-bundle-generator/-/dts-bundle-generator-1.6.1.tgz#08b09a3b282d615d4699fe78430815fc012e519e"
-  integrity sha512-PXNbaDgYvJSCbAOKHqDxml0uojfRvrVHkKc7v/lcxe8vuGxvkZsEcijQp4KHuEvtLt1whVddhZmTrGqXCW1p7w==
-  dependencies:
-    typescript ">=2.6.1"
-    yargs "~11.0.0"
 
 duplexify@^3.4.2, duplexify@^3.6.0:
   version "3.6.1"
@@ -3330,14 +3320,6 @@ trim-right@^1.0.1:
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
 
-ts-declaration-webpack-plugin@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/ts-declaration-webpack-plugin/-/ts-declaration-webpack-plugin-1.1.1.tgz#c09bcecce839952cc53deec54dd50681d623972e"
-  integrity sha512-GIX97dI4ZnT6mbp5KTGXfWgnbEzj5TBIEZ77BrUuZaaTJJdx93Ra8ayGWcGF9Azt8p8voTAMwjHvqGPpeC3YXg==
-  dependencies:
-    dts-bundle-generator "^1.6.1"
-    loader-utils "^1.1.0"
-
 ts-loader@^5.2.2:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-5.3.0.tgz#4bac24e57bc5189391ab14987d9898ce53ef5cf7"
@@ -3383,7 +3365,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@>=2.6.1, typescript@^3.1.3:
+typescript@^3.1.6:
   version "3.1.6"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.1.6.tgz#b6543a83cfc8c2befb3f4c8fba6896f5b0c9be68"
   integrity sha512-tDMYfVtvpb96msS1lDX9MEdHrW4yOuZ4Kdc4Him9oU796XldPYF/t2+uKoX0BBa0hXXwDlqYQbXY5Rzjzc5hBA==
@@ -3733,24 +3715,6 @@ yargs@^12.0.2:
     which-module "^2.0.0"
     y18n "^3.2.1 || ^4.0.0"
     yargs-parser "^10.1.0"
-
-yargs@~11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-11.0.0.tgz#c052931006c5eee74610e5fc0354bedfd08a201b"
-  integrity sha512-Rjp+lMYQOWtgqojx1dEWorjCofi1YN7AoFvYV7b1gx/7dAAeuI4kN5SZiEvr0ZmsZTOpDRcCqrpI10L31tFkBw==
-  dependencies:
-    cliui "^4.0.0"
-    decamelize "^1.1.1"
-    find-up "^2.1.0"
-    get-caller-file "^1.0.1"
-    os-locale "^2.0.0"
-    require-directory "^2.1.1"
-    require-main-filename "^1.0.1"
-    set-blocking "^2.0.0"
-    string-width "^2.0.0"
-    which-module "^2.0.0"
-    y18n "^3.2.1"
-    yargs-parser "^9.0.2"
 
 yn@^2.0.0:
   version "2.0.0"
