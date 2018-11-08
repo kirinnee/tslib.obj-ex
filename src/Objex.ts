@@ -21,7 +21,7 @@ interface Objex {
 
 class ObjectX implements Objex {
 	
-	private c: Core;
+	private readonly c: Core;
 	
 	constructor(core: Core) {
 		core.AssertExtend();
