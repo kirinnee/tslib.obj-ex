@@ -1,6 +1,6 @@
 {
   "name": "@kirinnee/objex",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extends Object prototype to give many powerful and performant utility tools such as lambda iterations",
   "main": "index.js",
   "license": "MIT",
@@ -25,8 +25,8 @@
     "major": "node script publish major"
   },
   "dependencies": {
-	  "@kirinnee/core": "^0.6.9",
-	  "typescript":     "^3.1.6"
+    "@kirinnee/core": "^0.6.9",
+    "typescript": "^3.1.6"
   },
   "devDependencies": {
     "@types/chai": "^4.1.6",
