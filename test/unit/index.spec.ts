@@ -7,6 +7,7 @@ let core: Core = new Kore();
 core.ExtendPrimitives();
 let objex: Objex = new ObjectX(core);
 
+
 describe("index", () => {
 	
 	describe("Assert Extend and Check Extended", () => {
