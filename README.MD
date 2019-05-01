@@ -2,6 +2,10 @@
 
 Extends Object prototype to give many powerful and performant utility tools such as lambda iterations
 
+Source: [GitLab](https://gitlab.com/node-packages-kirin/objex)
+
+Mirror: [GitHub](https://github.com/kirinnee/tslib.obj-ex)
+
 # Getting Started
 
 Install via NPM 
